@@ -11,5 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 Documentación de la [api](https://rickandmortyapi.com/) .
 
 ## Imagenes
-
-
+![Imagen 1](img1.png)
+![Imagen 2](img2.png)
+![Imagen 3](img3.png)
+![Imagen 4](img4.png)
