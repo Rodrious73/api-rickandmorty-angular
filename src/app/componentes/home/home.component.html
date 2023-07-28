@@ -1,0 +1,22 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Rick and Morty</span>
+  </div>
+</nav>
+<div class="contenedor-padre">
+    <div class="contenedor" *ngFor="let personajes of todosLosPersonajes">
+        <div>
+            <img src="{{personajes.image}}" class="imagenes" alt="{{personajes.name}}">
+            <div class="card-body mt-2">
+              <h5 class="card-title">{{personajes.name}}</h5>
+              <p class="card-text">Estatus : {{personajes.status}}</p>
+              <button [routerLink]="['perfil', personajes.id]" class="button-17">Ver detalles</button>
+            </div>
+        </div>
+    </div>  
+</div>
+<div class="container">
+    <div class="d-flex justify-content-center mt-5 mb-5">
+        <button *ngIf="siguientePaginaLink" (click)="cargarSiguientePagina()" class="button-17">Cargar más personajes</button>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="contenedor-padre">
+  <div class="contenedor-principal">
+    <div class="boton-esquina">
+      <button class="button-17 boton-esquina" title="Regresar" routerLink="">X</button>
+    </div>
+    <div class="datos-perfil">
+      <div *ngIf="personaje" class="left">
+        <img
+          src="{{ personaje.image }}"
+          class="imagenes"
+          alt="{{ personaje.name }}"
+        />
+      </div>
+      <div class="right">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">NOMBRE</th>
+              <th scope="col">FECHA</th>
+              <th scope="col">EPISODIO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let episodio of episodios">
+              <th scope="row">{{episodio.id}}</th>
+              <td>{{episodio.name}}</td>
+              <td>{{episodio.air_date}}</td>
+              <td>{{episodio.episode}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="abajo">
+        <div class="info">
+          <label for=""><b>ID : </b></label>
+          <p>{{ personaje.id }}</p>
+        </div>
+        <div class="info">
+          <label for=""><b>Nombre : </b></label>
+          <p>{{ personaje.name }}</p>
+        </div>
+        <div class="info">
+          <label for=""><b>Estatus : </b></label>
+          <p>{{ personaje.status }}</p>
+        </div>
+        <div class="info">
+          <label for=""><b>Especie : </b></label>
+          <p>{{ personaje.species }}</p>
+        </div>
+        <div class="info">
+          <label for=""><b>Tipo : </b></label>
+          <p>{{ personaje.type }}</p>
+        </div>
+      </div>
+      <div class="alado-abajo">
+        <div class="info">
+          <label for=""><b>Genero : </b></label>
+          <p>{{ personaje.gender }}</p>
+        </div>
+        <div class="info">
+          <label for=""><b>Origén : </b></label>
+          <p>{{ personaje.origin.name }}</p>
+        </div>
+        <div class="info">
+          <label for=""><b>Ubicación : </b></label>
+          <p>{{ personaje.location.name }}</p>
+        </div>
+        <div class="info">
+          <label for=""><b>Creado : </b></label>
+          <p>{{ personaje.created }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

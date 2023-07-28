@@ -1,0 +1,98 @@
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 80px;
+}
+
+.boton-esquina {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.boton-esquina button {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.datos-perfil {
+    flex: 1;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 50px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.left {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.right {
+    float: left;
+    margin: auto;
+    margin-top: 27px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: 65%;
+    height: 290px;
+    max-height: 290px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.imagenes {
+    float: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 40px;
+    height: auto;
+}
+
+.right .info {
+    margin-bottom: 10px;
+}
+
+.abajo label {
+    margin-left: 55px;
+    width: 100px;
+    display: inline-block;
+}
+
+.abajo p {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.abajo {
+    float: left;
+    width: 50%;
+}
+
+.alado-abajo {
+    max-height: 200px;
+    float: right;
+    width: 50%;
+}
+.alado-abajo label {
+    margin-left: 55px;
+    width: 100px;
+    display: inline-block;
+}
+
+.alado-abajo p {
+    margin-left: 20px;
+    display: inline-block;
+}
